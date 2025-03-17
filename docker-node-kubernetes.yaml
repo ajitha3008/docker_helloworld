@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp1
+  name: docker_helloworld
   namespace: default
 spec:
   replicas: 1
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: todo-site
-          image: ajitha3008/myapp1
+          image: ajitha3008/docker_helloworld
           imagePullPolicy: Always
 ---
 apiVersion: v1
